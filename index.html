@@ -37,7 +37,7 @@ async function loadData() {
     data.forEach(item => {
       const div = document.createElement("div");
       div.className = "item";
-      div.textContent = `${item.name}: ${item.value}`;
+      div.textContent = item.value;
       container.appendChild(div);
     });
 
