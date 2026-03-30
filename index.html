@@ -28,7 +28,7 @@ const API_URL = "https://script.google.com/macros/s/AKfycbz5nzebd2oijgNM6qbwF1gc
 
 async function loadData() {
   try {
-    const res = await fetch(API_URL);
+    const res = await fetch(API_URL + "?t=" + new Date().getTime());
     const data = await res.json();
 
     const container = document.getElementById("container");
