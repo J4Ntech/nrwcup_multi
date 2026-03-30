@@ -34,18 +34,21 @@ async function loadData() {
     const container = document.getElementById("container");
 
     container.innerHTML = `
-      <div>Set 1: ${data.B4} | ${data.C4}</div>
-      <div>Set 2: ${data.B7} | ${data.C7}</div>
+      <div> ${data.B4} ${data.C4}</div>
+      <div> ${data.B6} ${data.C6}</div>
+      <div> ${data.B8} ${data.C8}</div>
 
-      <div>Match 1: ${data.B17} | ${data.C17}</div>
-      <div>Match 2: ${data.B18} | ${data.C18}</div>
-      <div>Match 3: ${data.B19}</div>
+      <div> ${data.E4} ${data.F4}</div>
+      <div> ${data.E6} ${data.F6}</div>
+      <div> ${data.E8} ${data.F8}</div>
 
-      <div>Side A: ${data.E4} | ${data.F4}</div>
-      <div>Side B: ${data.E7} | ${data.F7}</div>
+      <div> ${data.B17} ${data.C17}</div>
+      <div> ${data.B19} ${data.C19}</div>
+      <div> ${data.B21} ${data.C21}</div>
 
-      <div>Match A: ${data.E17} | ${data.F17}</div>
-      <div>Match B: ${data.E19} | ${data.F19}</div>
+      <div> ${data.E17} ${data.F17}</div>
+      <div> ${data.E19} ${data.F19}</div>
+      <div> ${data.E21} ${data.F21}</div>
     `;
 
   } catch (err) {
